@@ -1,7 +1,7 @@
 /*
- * Copyright 2016 Google, Inc.
+ * Copyright 2020 Netflix, Inc.
  *
- * Licensed under the Apache License, Version 2.0 (the "License")
+ * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -29,6 +29,7 @@ import com.netflix.spinnaker.halyard.config.model.v1.providers.huaweicloud.Huawe
 import com.netflix.spinnaker.halyard.config.model.v1.providers.kubernetes.KubernetesProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleBMCSProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleProvider;
+import com.netflix.spinnaker.halyard.config.model.v1.providers.yandex.YandexCloudProvider;
 import com.netflix.spinnaker.halyard.config.problem.v1.ConfigProblemBuilder;
 import com.netflix.spinnaker.halyard.core.problem.v1.Problem.Severity;
 import com.netflix.spinnaker.halyard.core.problem.v1.ProblemSet;
@@ -138,6 +139,9 @@ public class ProviderService {
         break;
       case ORACLEBMCS:
         providers.setOraclebmcs((OracleBMCSProvider) provider);
+        break;
+      case YANDEX:
+        providers.setYandex((YandexCloudProvider) provider);
         break;
       default:
         throw new IllegalArgumentException("Unknown provider type " + provider.providerType());

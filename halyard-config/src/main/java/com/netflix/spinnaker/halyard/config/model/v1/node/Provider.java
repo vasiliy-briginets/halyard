@@ -1,7 +1,7 @@
 /*
- * Copyright 2016 Google, Inc.
+ * Copyright 2020 Netflix, Inc.
  *
- * Licensed under the Apache License, Version 2.0 (the "License")
+ * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -100,7 +100,9 @@ public abstract class Provider<A extends Account> extends Node implements Clonea
     HUAWEICLOUD("huaweicloud"),
     KUBERNETES("kubernetes"),
     ORACLE("oracle"),
-    ORACLEBMCS("oraclebmcs"); // obsolete, replaced by ORACLE
+    ORACLEBMCS("oraclebmcs"), // obsolete, replaced by ORACLE
+    YANDEX("yandex"),
+    ;
 
     @Getter String name;
 
