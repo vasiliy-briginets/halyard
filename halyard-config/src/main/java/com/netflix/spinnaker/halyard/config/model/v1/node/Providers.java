@@ -31,13 +31,12 @@ import com.netflix.spinnaker.halyard.config.model.v1.providers.huaweicloud.Huawe
 import com.netflix.spinnaker.halyard.config.model.v1.providers.kubernetes.KubernetesProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleBMCSProvider;
 import com.netflix.spinnaker.halyard.config.model.v1.providers.oracle.OracleProvider;
+import com.netflix.spinnaker.halyard.config.model.v1.providers.yandex.YandexCloudProvider;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-
-import com.netflix.spinnaker.halyard.config.model.v1.providers.yandex.YandexCloudProvider;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
