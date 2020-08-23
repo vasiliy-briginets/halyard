@@ -23,8 +23,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class YandexCloudAccount extends Account {
-    String endpoint;
-    String jsonPath;
-    String folder;
-    String accountType;
+  String endpoint;
+  String jsonPath;
+  String folder;
+  String accountType;
 }
